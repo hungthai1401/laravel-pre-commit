@@ -1,4 +1,9 @@
 ## Laravel GIT pre-commit hook
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/hungthai1401/laravel-pre-commit)
+[![Build Status](https://travis-ci.org/hungthai1401/laravel-pre-commit.svg?branch=master)](https://travis-ci.org/hungthai1401/laravel-pre-commit)
+![GitHub issues](https://img.shields.io/github/issues/hungthai1401/laravel-pre-commit)
+![Packagist Stars](https://img.shields.io/packagist/stars/hungthai1401/laravel-pre-commit)
+![GitHub All Releases](https://img.shields.io/github/downloads/hungthai1401/laravel-pre-commit/total)
 
 ### Installation
 To install through Composer, by run the following command:
