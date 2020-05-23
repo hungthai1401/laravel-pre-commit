@@ -1,0 +1,50 @@
+{
+    "name": "hungthai1401/laravel-pre-commit",
+    "description": "A git pre-commit hook to Laravel apps.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "git",
+        "commit",
+        "pre-commit"
+    ],
+    "authors": [
+        {
+            "name": "Thai Nguyen Hung",
+            "email": "hungthai1401.it@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "illuminate/console": "^5.5|^6|^7",
+        "illuminate/support": "^5.5|^6|^7",
+        "squizlabs/php_codesniffer": "^3.3",
+        "php-parallel-lint/php-parallel-lint": "dev-master",
+        "php-parallel-lint/php-console-highlighter": "dev-master"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.16",
+        "phpunit/phpunit": "^6.0|^7.0|^8.0|^9.0",
+        "spatie/phpunit-snapshot-assertions": "^1|^2|^3|^4",
+        "orchestra/testbench": "^3.5|^4|^5"
+    },
+    "autoload": {
+        "psr-4": {
+            "HT\\PreCommit\\": "src/",
+            "HT\\PreCommit\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "HT\\PreCommit\\Providers\\PreCommitServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "pcf": "vendor/bin/php-cs-fixer fix --verbose"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
